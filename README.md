@@ -8,88 +8,35 @@
   <p>Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a <strong>criar soluções inovadoras</strong>, <strong>depurar eficientemente</strong> e <strong>manter a qualidade</strong> ao longo do ciclo de vida do software.</p>
   <p>Portanto, investir tempo nesses princípios desde cedo é fundamental para <strong>construir uma base sólida e bem-sucedida</strong> no campo da programação.</p>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Desafios Finais - JavaScript</title>
-</head>
+
 <body>
-  <h1>🚀 Desafios Finais de JavaScript</h1>
 
-  <script>
-    // 1 - Mensagem de boas-vindas
-    console.log("1 - Bem-vindo ao meu programa!");
+<h1>🚀 Desafios Finais de JavaScript</h1>
 
-    // 2 - Saudação com nome
-    let nome = "Aline";
-    console.log(`2 - Olá, ${nome}!`);
+<div class="desafio"> <h2>Desafio 1 — Mensagem de boas-vindas</h2> <div class="enunciado">Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.</div> <pre> console.log("Bem-vindo ao meu programa!"); </pre> <div class="resposta">🟢 O console exibirá: "Bem-vindo ao meu programa!"</div> </div>
 
-    // 3 - Saudação com alert
-    let nome2 = "Aline";
-    alert(`3 - Olá, ${nome2}!`);
+<div class="desafio"> <h2>Desafio 2 — Saudação com nome</h2> <div class="enunciado">Crie uma variável chamada "nome" e utilize console.log para dizer "Olá, [seu nome]!".</div> <pre> let nome = "Aline"; console.log(Olá, ${nome}!); </pre> <div class="resposta">🟢 O console exibirá: "Olá, Aline!"</div> </div>
 
-    // 4 - Pergunta sobre linguagem favorita
-    let linguagemFavorita = prompt("4 - Qual a linguagem de programação que você mais gosta?");
-    console.log(`4 - Você gosta de ${linguagemFavorita}.`);
+<div class="desafio"> <h2>Desafio 3 — Saudação com alert</h2> <div class="enunciado">Use alert para mostrar "Olá, [seu nome]!" com base na variável "nome".</div> <pre> let nome2 = "Aline"; alert(Olá, ${nome2}!); </pre> <div class="resposta">🟢 Um alerta será exibido com "Olá, Aline!"</div> </div>
 
-    // 5 - Soma de dois valores
-    let valor1 = parseInt(prompt("5 - Digite o primeiro valor para soma:"));
-    let valor2 = parseInt(prompt("5 - Digite o segundo valor para soma:"));
-    let resultadoSoma = valor1 + valor2;
-    console.log(`5 - A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}.`);
+<div class="desafio"> <h2>Desafio 4 — Pergunta sobre linguagem favorita</h2> <div class="enunciado">Pergunte ao usuário qual linguagem de programação ele mais gosta.</div> <pre> let linguagemFavorita = prompt("Qual a linguagem de programação que você mais gosta?"); console.log(Você gosta de ${linguagemFavorita}.); </pre> <div class="resposta">🟢 Exemplo: Se digitar "JavaScript", o console exibirá "Você gosta de JavaScript."</div> </div>
 
-    // 6 - Subtração de dois valores
-    let valor1Sub = parseInt(prompt("6 - Digite o primeiro valor para subtração:"));
-    let valor2Sub = parseInt(prompt("6 - Digite o segundo valor para subtração:"));
-    let resultadoSubtracao = valor1Sub - valor2Sub;
-    console.log(`6 - A diferença entre ${valor1Sub} e ${valor2Sub} é igual a ${resultadoSubtracao}.`);
+<div class="desafio"> <h2>Desafio 5 — Soma de dois valores</h2> <div class="enunciado">Peça dois valores ao usuário com prompt, calcule a soma e exiba o resultado.</div> <pre> let valor1 = parseInt(prompt("Digite o primeiro valor para soma:")); let valor2 = parseInt(prompt("Digite o segundo valor para soma:")); let resultadoSoma = valor1 + valor2; console.log(A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}.); </pre> <div class="resposta">🟢 Exemplo: Se digitar 5 e 3, verá "A soma de 5 e 3 é igual a 8."</div> </div>
 
-    // 7 - Verificação de maioridade
-    let idade = parseInt(prompt("7 - Qual é a sua idade?"));
-    if (idade >= 18) {
-      console.log("7 - Você é maior de idade.");
-    } else {
-      console.log("7 - Você é menor de idade.");
-    }
+<div class="desafio"> <h2>Desafio 6 — Subtração de valores</h2> <div class="enunciado">Peça dois valores com prompt e calcule a subtração.</div> <pre> let valor1Sub = parseInt(prompt("Digite o primeiro valor para subtração:")); let valor2Sub = parseInt(prompt("Digite o segundo valor para subtração:")); let resultadoSubtracao = valor1Sub - valor2Sub; console.log(A diferença entre ${valor1Sub} e ${valor2Sub} é igual a ${resultadoSubtracao}.); </pre> <div class="resposta">🟢 Exemplo: Se digitar 10 e 4, verá "A diferença entre 10 e 4 é igual a 6."</div> </div>
 
-    // 8 - Verificação de número positivo, negativo ou zero
-    let numero = parseInt(prompt("8 - Digite um número:"));
-    if (numero > 0) {
-      console.log("8 - O número é positivo.");
-    } else if (numero < 0) {
-      console.log("8 - O número é negativo.");
-    } else {
-      console.log("8 - O número é zero.");
-    }
+<div class="desafio"> <h2>Desafio 7 — Verificação de idade</h2> <div class="enunciado">Peça a idade do usuário e diga se ele é maior ou menor de idade.</div> <pre> let idade = parseInt(prompt("Qual é a sua idade?")); if (idade >= 18) { console.log("Você é maior de idade."); } else { console.log("Você é menor de idade."); } </pre> <div class="resposta">🟢 Exemplo: Se digitar 20, o console mostrará "Você é maior de idade."</div> </div>
 
-    // 9 - Contagem com loop while
-    console.log("9 - Contando de 1 a 10:");
-    let contador = 1;
-    while (contador <= 10) {
-      console.log(`9 - ${contador}`);
-      contador++;
-    }
+<div class="desafio"> <h2>Desafio 8 — Positivo, negativo ou zero</h2> <div class="enunciado">Peça um número e indique se é positivo, negativo ou igual a zero.</div> <pre> let numero = parseInt(prompt("Digite um número:")); if (numero > 0) { console.log("O número é positivo."); } else if (numero < 0) { console.log("O número é negativo."); } else { console.log("O número é zero."); } </pre> <div class="resposta">🟢 Exemplo: Se digitar -5, o console exibirá "O número é negativo."</div> </div>
 
-    // 10 - Verificação de aprovação com nota
-    let nota = parseFloat(prompt("10 - Digite sua nota:"));
-    if (nota >= 7) {
-      console.log("10 - Aprovado");
-    } else {
-      console.log("10 - Reprovado");
-    }
+<div class="desafio"> <h2>Desafio 9 — Contagem de 1 a 10</h2> <div class="enunciado">Imprima os números de 1 a 10 usando while.</div> <pre> let contador = 1; while (contador <= 10) { console.log(contador); contador++; } </pre> <div class="resposta">🟢 O console mostrará os números de 1 até 10.</div> </div>
 
-    // 11 - Número aleatório entre 0 e 1
-    let aleatorio = Math.random();
-    console.log(`11 - Número aleatório entre 0 e 1: ${aleatorio}`);
+<div class="desafio"> <h2>Desafio 10 — Aprovado ou Reprovado</h2> <div class="enunciado">Peça a nota do usuário e diga se ele foi aprovado (nota ≥ 7).</div> <pre> let nota = parseFloat(prompt("Digite sua nota:")); if (nota >= 7) { console.log("Aprovado"); } else { console.log("Reprovado"); } </pre> <div class="resposta">🟢 Exemplo: Se digitar 8.2, o console mostrará "Aprovado."</div> </div>
 
-    // 12 - Número inteiro entre 1 e 10
-    let inteiro1a10 = Math.floor(Math.random() * 10) + 1;
-    console.log(`12 - Número aleatório entre 1 e 10: ${inteiro1a10}`);
+<div class="desafio"> <h2>Desafio 11 — Número aleatório entre 0 e 1</h2> <div class="enunciado">Gere qualquer número aleatório com Math.random.</div> <pre> let aleatorio = Math.random(); console.log(Número aleatório entre 0 e 1: ${aleatorio}); </pre> <div class="resposta">🟢 O console exibirá um número decimal entre 0 e 1.</div> </div>
 
-    // 13 - Número inteiro entre 1 e 1000
-    let inteiro1a1000 = Math.floor(Math.random() * 1000) + 1;
-    console.log(`13 - Número aleatório entre 1 e 1000: ${inteiro1a1000}`);
-  </script>
+<div class="desafio"> <h2>Desafio 12 — Número entre 1 e 10</h2> <div class="enunciado">Use Math.random para gerar um número inteiro entre 1 e 10.</div> <pre> let inteiro1a10 = Math.floor(Math.random() * 10) + 1; console.log(Número aleatório entre 1 e 10: ${inteiro1a10}); </pre> <div class="resposta">🟢 Exemplo: "Número aleatório entre 1 e 10: 7"</div> </div>
+
+<div class="desafio"> <h2>Desafio 13 — Número entre 1 e 1000</h2> <div class="enunciado">Use Math.random para gerar um número inteiro entre 1 e 1000.</div> <pre> let inteiro1a1000 = Math.floor(Math.random() * 1000) + 1; console.log(Número aleatório entre 1 e 1000: ${inteiro1a1000}); </pre> <div class="resposta">🟢 Exemplo: "Número aleatório entre 1 e 1000: 823"</div> </div>
+
 </body>
-</html>
