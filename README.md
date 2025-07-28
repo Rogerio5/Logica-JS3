@@ -12,77 +12,84 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Desafios Finais JS</title>
+  <title>Desafios Finais - JavaScript</title>
 </head>
 <body>
-  <h1>💻 Desafios Finais de JavaScript</h1>
+  <h1>🚀 Desafios Finais de JavaScript</h1>
 
   <script>
-    // 1
-    console.log("Bem-vindo ao meu programa!");
+    // 1 - Mensagem de boas-vindas
+    console.log("1 - Bem-vindo ao meu programa!");
 
-    // 2 e 3
+    // 2 - Saudação com nome
     let nome = "Aline";
-    console.log(`Olá, ${nome}!`);
-    alert(`Olá, ${nome}!`);
+    console.log(`2 - Olá, ${nome}!`);
 
-    // 4
-    let linguagemFavorita = prompt("Qual a linguagem de programação que você mais gosta?");
-    console.log(`Você gosta de ${linguagemFavorita}.`);
+    // 3 - Saudação com alert
+    let nome2 = "Aline";
+    alert(`3 - Olá, ${nome2}!`);
 
-    // 5 e 6
-    let valor1 = parseInt(prompt("Digite o primeiro valor:"));
-    let valor2 = parseInt(prompt("Digite o segundo valor:"));
+    // 4 - Pergunta sobre linguagem favorita
+    let linguagemFavorita = prompt("4 - Qual a linguagem de programação que você mais gosta?");
+    console.log(`4 - Você gosta de ${linguagemFavorita}.`);
+
+    // 5 - Soma de dois valores
+    let valor1 = parseInt(prompt("5 - Digite o primeiro valor para soma:"));
+    let valor2 = parseInt(prompt("5 - Digite o segundo valor para soma:"));
     let resultadoSoma = valor1 + valor2;
-    let resultadoSubtracao = valor1 - valor2;
-    console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}.`);
-    console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultadoSubtracao}.`);
+    console.log(`5 - A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}.`);
 
-    // 7
-    let idade = parseInt(prompt("Qual é a sua idade?"));
+    // 6 - Subtração de dois valores
+    let valor1Sub = parseInt(prompt("6 - Digite o primeiro valor para subtração:"));
+    let valor2Sub = parseInt(prompt("6 - Digite o segundo valor para subtração:"));
+    let resultadoSubtracao = valor1Sub - valor2Sub;
+    console.log(`6 - A diferença entre ${valor1Sub} e ${valor2Sub} é igual a ${resultadoSubtracao}.`);
+
+    // 7 - Verificação de maioridade
+    let idade = parseInt(prompt("7 - Qual é a sua idade?"));
     if (idade >= 18) {
-      console.log("Você é maior de idade.");
+      console.log("7 - Você é maior de idade.");
     } else {
-      console.log("Você é menor de idade.");
+      console.log("7 - Você é menor de idade.");
     }
 
-    // 8
-    let numero = parseInt(prompt("Digite um número:"));
+    // 8 - Verificação de número positivo, negativo ou zero
+    let numero = parseInt(prompt("8 - Digite um número:"));
     if (numero > 0) {
-      console.log("O número é positivo.");
+      console.log("8 - O número é positivo.");
     } else if (numero < 0) {
-      console.log("O número é negativo.");
+      console.log("8 - O número é negativo.");
     } else {
-      console.log("O número é zero.");
+      console.log("8 - O número é zero.");
     }
 
-    // 9
-    console.log("Contagem de 1 a 10:");
+    // 9 - Contagem com loop while
+    console.log("9 - Contando de 1 a 10:");
     let contador = 1;
     while (contador <= 10) {
-      console.log(contador);
+      console.log(`9 - ${contador}`);
       contador++;
     }
 
-    // 10
-    let nota = parseFloat(prompt("Digite sua nota:"));
+    // 10 - Verificação de aprovação com nota
+    let nota = parseFloat(prompt("10 - Digite sua nota:"));
     if (nota >= 7) {
-      console.log("Aprovado");
+      console.log("10 - Aprovado");
     } else {
-      console.log("Reprovado");
+      console.log("10 - Reprovado");
     }
 
-    // 11
+    // 11 - Número aleatório entre 0 e 1
     let aleatorio = Math.random();
-    console.log(`Número aleatório entre 0 e 1: ${aleatorio}`);
+    console.log(`11 - Número aleatório entre 0 e 1: ${aleatorio}`);
 
-    // 12
+    // 12 - Número inteiro entre 1 e 10
     let inteiro1a10 = Math.floor(Math.random() * 10) + 1;
-    console.log(`Número aleatório entre 1 e 10: ${inteiro1a10}`);
+    console.log(`12 - Número aleatório entre 1 e 10: ${inteiro1a10}`);
 
-    // 13
+    // 13 - Número inteiro entre 1 e 1000
     let inteiro1a1000 = Math.floor(Math.random() * 1000) + 1;
-    console.log(`Número aleatório entre 1 e 1000: ${inteiro1a1000}`);
+    console.log(`13 - Número aleatório entre 1 e 1000: ${inteiro1a1000}`);
   </script>
 </body>
 </html>
